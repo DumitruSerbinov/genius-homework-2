@@ -1,0 +1,415 @@
+/* play-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v48-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v48-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --color-text-dark: #000000;
+    --color-primary-white: #FFFFFF;
+    --color-primary-dark: #011C44;
+    --color-primary-lighr: #2B7FFF;
+    --color-secondary-gd: #4a4a4a;
+    --color-secondary-gr: #747272;
+    --color-secondary-blue: #011f4a;
+    --color-secondary-yelow: #ffd02b;
+}
+
+/*Base*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif ;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'Play', sans-serif;
+}
+
+h2 {
+    font-family: 'Play', sans-serif;
+}
+
+.accent {
+    color: var(--color-primary-lighr);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+}
+
+/*icon*/
+.activity-icon {
+    fill: var(--color-primary-lighr);
+}
+
+.address-icon-header {
+    fill: var(--color-primary-dark);
+}
+
+.address-icon-footer {
+    fill: var(--color-primary-white);
+}
+
+.address-icon-header:hover,
+.address-icon-footer:hover {
+    fill: var(--color-primary-lighr);
+}
+
+/*Button*/
+.button {
+    margin-bottom: 14px;
+    padding: 16px 32px;
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-lighr);
+    border: 2px solid var(--color-primary-lighr);
+    font-weight: 600;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.button-inf {
+    color: var(--color-secondary-gd);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/*Link*/
+.link-header {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+
+.link-header:hover {
+    color: var(--color-primary-lighr);
+    font-weight: 700;
+}
+
+.link-footer {
+    color: var(--color-primary-white);   
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    color: var(--color-primary-lighr);
+    font-weight: 400;
+}
+
+/*Header*/
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/*Hero-section*/
+.hero-section {
+    padding: 123px 729px 156px 244px;
+    background-image: url('../images/image\ 1576.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-inf {
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    margin-bottom: 40;
+    color: var(--color-primary-lighr);
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+/*Advantages-section*/
+.advantages-list {
+    color: var(--color-text-dark);
+}
+
+.section-title {
+    margin-bottom: 48px;
+    font-size: 64px;
+    font-weight: 700;  
+}
+
+.input-form {
+    color: var(--color-primary-white);
+}
+
+/*aboutus-section*/
+.aboutus-section {
+    padding-top: 126px;
+}
+.aboutus-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.aboutus-content {
+    max-width: 709px;
+}
+
+.aboutus-title {
+margin-bottom: 180px;
+}
+
+.aboutus-text {
+    margin-bottom: 40px;
+    font-style: 22px;
+    line-height: 1.7; 
+}
+.brand-name {
+    font-weight: 600;
+}
+
+/*activity-section*/
+.activity-section {
+    text-align: center;
+}
+
+.activity-list {
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+}
+
+.activity-card {
+    padding: 24px 32px;
+    border: 1px solid #4a4a4a; /*remove*/
+    border-radius: 32px;
+    max-width: 316px;
+}
+
+.activity-text {
+    line-height: 1.5;
+}
+
+/*procedures-section*/
+.procedures-section {
+    text-align: center; 
+}
+
+.procedures-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.procedures-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.procedures-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedures-card {
+    height: 456px;
+    padding: 372px 77px 32px 115px;
+    background-image: linear-gradient(180deg,
+        rgba(49, 38, 26, 0) 55.21%,
+        rgba(49, 38, 26, 0.71) 72.58%,
+        var(--color-primary-dark) 100%);
+    border: 1px solid lightgray;
+    border-radius: 16px;
+}
+
+.procedures-text {
+    font-style: 22px;
+    color: var(--color-primary-white);
+}
+
+/*carousel*/
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-primary-dark);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
+/*contacts-section*/
+.contact-section {
+    padding-bottom: 96px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: none;
+}
+
+.contacts-input-form {
+    margin-bottom: 32px;
+    font-style: 22px;
+    font-weight: 600;
+}
+
+/*Footer*/
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
+.link-footer {
+    font-style: 16px;
+}
+
+.address-link {
+color: var(--color-primary-white);
+font-style: 16px;
+}
+
+.address-link:hover {
+color: var(--color-primary-lighr);
+}
+
+.address-copyright {
+    color: var(--color-secondary-gr);
+    font-style: 13px; 
+}
+
+.footer {
+    padding: 32px 0;
+    background-color: var(--color-primary-dark);
+    background-image: url('../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
